@@ -1,0 +1,40 @@
+<!--
+  Tasks:
+  1. Display the list of dogs in a responsive fashion.
+  2. Allow the list of dogs to be replaced with the dog-search input, which uses the dogSearch API.
+  3. When a dog name is clicked, navigate to the DogComponent, and display that dogs info.
+  4. Handle pagination (don't worry about displaying the list of pages, just next / prev).
+  5. Handle display limit.
+-->
+<div class="dog-list-wrapper">
+  <input class="dog-search" placeholder="Search for dog breed" />
+
+  <div class="dog-list">
+    <div class="dog">
+      <div class="dog-image"></div>
+      <!--.dog-image-->
+      <h3><a>name</a></h3>
+      <p>temperament</p>
+      <p>breed group</p>
+    </div>
+    <!--.dog-->
+  </div>
+  <!--.dog-list-->
+</div>
+<!--.dog-list-wrapper-->
+
+<div class="pagination">
+  <button class="prev">previous</button>
+  <button class="next">next</button>
+</div>
+<!--.pagination-->
+
+<div class="limit">
+  <label for="queryLimit">Results per page:</label>
+  <select id="queryLimit" [formControl]="queryLimit">
+    <option [value]="10">10</option>
+    <option [value]="20">20</option>
+    <option [value]="30">30</option>
+  </select>
+</div>
+<!--.limit-->

@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  flex: 0 1 120px;
+}
+
+main {
+  flex: 1 1 0%;
+  min-height: 100vh;
+}
